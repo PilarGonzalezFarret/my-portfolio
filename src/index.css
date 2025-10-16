@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  /* Degradé que empieza en beige y termina en rosa tierra, pero muy suave */
+  background: linear-gradient(to bottom, 
+    #e5dedc 0%, 
+    #e5dedc 80%, 
+    #cfb2b6 100%);
+}

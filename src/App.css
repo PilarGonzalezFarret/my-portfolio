@@ -1,0 +1,185 @@
+/* src/App.css */
+.portfolio {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  /* ¡sin background-color aquí! */
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #505948; /* verde oliva oscuro */
+}
+.hero p {
+  font-size: 1.5rem;
+  color: #837a73; /* gris cálido */
+  margin-bottom: 2rem;
+}
+
+/* Botones */
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.btn {
+  background-color: #505948;
+  color: #e5dedc;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background-color: #191d28;
+}
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #505948;
+  color: #505948;
+}
+.btn-outline:hover {
+  background-color: #f8f6f5;
+}
+
+/* Secciones */
+.sobre-mi,
+.proyectos,
+.contacto {
+  padding: 3rem 0;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #191d28;
+}
+.sobre-mi p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #191d28;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.contacto p,a {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: #191d28;
+}
+
+/* Proyectos grid */
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.proyecto {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(25, 29, 40, 0.05);
+  border: 1px solid #e5dedc;
+}
+.proyecto h3 {
+  margin-bottom: 0.8rem;
+  color: #505948;
+}
+.proyecto-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.proyecto-links a {
+  color: #cfb2b6; /* rosa tierra */
+  text-decoration: none;
+  font-weight: 600;
+}
+.proyecto-links a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.redes a {
+  color: #191d28;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+}
+.redes a:hover {
+  background-color: #f1f5f9;
+}
+
+/* Imágenes de proyectos */
+.proyecto-imagen {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(25, 29, 40, 0.1);
+  border: 1px solid #e5dedc;
+}
+
+/* Tecnologías */
+.tecnologias {
+  padding: 2rem 0 3rem;
+  text-align: center;
+}
+.tecnologias h2 {
+  margin-bottom: 2rem;
+  color: #191d28;
+}
+.tecnologias-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.8rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.tecnologia-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+}
+.tecnologia-item svg {
+  margin-bottom: 0.6rem;
+}
+.tecnologia-item span {
+  font-size: 0.85rem;
+  color: #191d28;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 1rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .proyectos-grid {
+    grid-template-columns: 1fr;
+  }
+}
