@@ -202,6 +202,38 @@ const App = () => {
               </a>
             </div>
           </div>
+
+          {/* Proyecto 4: Perritos Watones y Felices */}
+          <div className="proyecto">
+            <img
+              src="/images/perritos.png"
+              alt="Perritos Watones y Felices"
+              className="proyecto-imagen"
+            />
+            <h3>Perritos Watones y Felices</h3>
+            <p>
+              <strong>Tecnologías:</strong> HTML, CSS, JavaScript
+            </p>
+            <p>
+              Sitio web para visibilizar una iniciativa solidaria de estudiantes secundarios que apoyan a perros callejeros en Peñaflor con comida, cariño y visibilidad.
+            </p>
+            <div className="proyecto-links">
+              <a
+                href="https://perritoswatones.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Demo
+              </a>
+              <a
+                href="https://github.com/PilarGonzalezFarret/perritos-watones"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Código
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
